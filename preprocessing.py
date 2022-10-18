@@ -13,7 +13,7 @@ def preprocessing(path):
         t2 = (i+1) * 30 * 1000
         newAudio = sound[t1:t2]
 
-        newAudio.set_channels(1)   # single channel --> mono channel
+        newAudio.set_channels(0)   # single channel --> mono channel
         newAudio = newAudio.set_frame_rate(16000)    # convert frequency : mọi freq --> 16000kHz
         print(newAudio.frame_rate)
         print(newAudio.split_to_mono())
