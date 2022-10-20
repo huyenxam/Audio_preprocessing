@@ -24,7 +24,7 @@ def normalize_audio(s):
 
 import csv
 
-list_audio = []
+list_audio = [["path", "duration", "transcript"]]
 with open("Audio_text - audio.csv", 'r', encoding="utf8") as file:
   csvreader = csv.reader(file)
   for row in csvreader:
